@@ -12,22 +12,39 @@ export default function MorningMotivation() {
 
   useEffect(() => {
     if (!user?.morningMotivation) return;
+
     const today = new Date().toISOString().slice(0, 10);
-    const seen = localStorage.getItem("morning-seen");
-    if (seen === today) return;
+
+    const savedDate = localStorage.getItem("morning-date");
+
+    const savedContent = localStorage.getItem("morning-content");
+
+    // Reuse today's saved motivation
+    if (savedDate === today && savedContent) {
+      setContent(savedContent);
+      return;
+    }
+
+    // Generate a new one
     setLoading(true);
+
     api
       .get("/ai/morning")
       .then((res) => {
-        setContent(res.data.content);
-        localStorage.setItem("morning-seen", today);
+        const newContent = res.data.content;
+
+        setContent(newContent);
+
+        localStorage.setItem("morning-date", today);
+
+        localStorage.setItem("morning-content", newContent);
       })
       .catch((err) => {
         console.error("Morning motivation error:", err);
       })
       .finally(() => setLoading(false));
   }, [user?.morningMotivation]);
-  
+
   if (!user?.morningMotivation || dismissed) return null;
 
   return (

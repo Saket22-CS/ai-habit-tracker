@@ -22,11 +22,13 @@ export default function MorningMotivation() {
         setContent(res.data.content);
         localStorage.setItem("morning-seen", today);
       })
+      .catch((err) => {
+        console.error("Morning motivation error:", err);
+      })
       .finally(() => setLoading(false));
   }, [user?.morningMotivation]);
-
-  if (!user?.morningMotivation || dismissed || (!content && !loading))
-    return null;
+  
+  if (!user?.morningMotivation || dismissed) return null;
 
   return (
     <div className="relative rounded-2xl p-5 glass overflow-hidden animate-slide-up">

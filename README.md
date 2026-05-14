@@ -11,7 +11,7 @@
 
 **A full-stack MERN application powered by Google Gemini AI for intelligent habit coaching, streak analytics, and personalized daily motivation.**
 
-[Live Demo](#) · [API Docs](#api-documentation) · [Report Bug](#troubleshooting) · [Request Feature](#roadmap)
+[Live Demo](https://ai-habit-tracker-alpha.vercel.app/) · [API Docs](#api-documentation) · [Report Bug](#troubleshooting) · [Request Feature](#roadmap)
 
 </div>
 
@@ -1084,6 +1084,7 @@ graph LR
 # 3. Set environment variable:
 #    VITE_API_URL = https://your-backend.render.com/api
 # 4. Deploy — Vercel auto-detects Vite
+# 5. Live: https://ai-habit-tracker-alpha.vercel.app/
 ```
 
 ### Backend (Render)

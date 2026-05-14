@@ -1,6 +1,6 @@
-# 🎯 AI Habit Tracker
-
 <div align="center">
+
+# 🎯 AI Habit Tracker
 
 ![Version](https://img.shields.io/badge/version-1.0.0-blue?style=for-the-badge)
 ![Node](https://img.shields.io/badge/Node.js-18+-green?style=for-the-badge&logo=node.js)
@@ -17,31 +17,7 @@
 
 ---
 
-## 📋 Table of Contents
-
-- [Overview](#overview)
-- [Key Features](#key-features)
-- [Tech Stack](#tech-stack)
-- [System Architecture](#system-architecture)
-- [Project Structure](#project-structure)
-- [Data Flow & Workflows](#data-flow--workflows)
-- [Database Schema](#database-schema)
-- [AI Features Deep Dive](#ai-features-deep-dive)
-- [API Documentation](#api-documentation)
-- [Installation & Setup](#installation--setup)
-- [Environment Variables](#environment-variables)
-- [Analytics & Calculations](#analytics--calculations)
-- [Performance Optimization](#performance-optimization)
-- [Security](#security)
-- [Troubleshooting](#troubleshooting)
-- [Deployment](#deployment)
-- [Contributing](#contributing)
-- [Roadmap](#roadmap)
-- [License](#license)
-
----
-
-## 🎯 Overview
+## 📌 Overview
 
 **AI Habit Tracker** is a sophisticated, full-stack habit management system built on the MERN stack with Google Gemini 2.5 Flash AI at its core. It goes far beyond a simple to-do list — it's a personal coaching platform that:
 
